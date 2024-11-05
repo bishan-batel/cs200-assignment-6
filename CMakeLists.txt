@@ -42,7 +42,7 @@ add_library(Texture src/Texture.cpp)
 target_link_libraries(Texture PUBLIC Camera SquareMesh SolidRender Affine OpenGL glm::glm SDL2::SDL2 ${GLEW_LIBRARIES})
 include_directories(Texture ${GLEW_INCLUDE_DIRS})
 
-add_library(TextureRender src/TexturedMesh.cpp)
+add_library(TextureRender src/TextureRender.cpp)
 target_link_libraries(TextureRender PUBLIC Texture Camera SquareMesh SolidRender Affine OpenGL glm::glm SDL2::SDL2 ${GLEW_LIBRARIES})
 include_directories(TextureRender ${GLEW_INCLUDE_DIRS})
 

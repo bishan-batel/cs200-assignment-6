@@ -29,7 +29,7 @@ Standard: c++11
 BraceWrapping: 
   AfterCaseLabel: false
   AfterClass: false
-  AfterControlStatement: Never
+  AfterControlStatement: Always
   AfterEnum: false
   AfterFunction: false
   AfterNamespace: false
@@ -100,5 +100,5 @@ SortIncludes: Never
 SortUsingDeclarations: Never
 SpaceAfterLogicalNot: false
 PointerAlignment: Left
-SpaceBeforeCtorInitializerColon: true
+SpaceBeforeCtorInitializerColon: false
 ...
