@@ -1,6 +1,6 @@
 /**
  * File: SolidRender.cpp
- * Name: Edgar Jose Donoso Mansilla (e.donosomansilla)
+ * Name: Kishan Patel
  * Assignment: 3
  * Course: CS200
  * Term: FALL24

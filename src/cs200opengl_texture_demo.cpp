@@ -224,6 +224,7 @@ void Client::draw(double dt) {
   // select texture buffer to use
   glBindTexture(GL_TEXTURE_2D,texture_buffer);
 
+
   // select desired VAO
   if (mode/2 == 0)
     glBindVertexArray(vao1);

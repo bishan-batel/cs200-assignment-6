@@ -20,7 +20,6 @@ AllowShortEnumsOnASingleLine: false
 AllowShortFunctionsOnASingleLine: Inline
 AllowShortLambdasOnASingleLine: All
 AlwaysBreakTemplateDeclarations: Yes
-BreakTemplateDeclarations: Yes
 AlwaysBreakBeforeMultilineStrings: false
 BinPackArguments: false
 BinPackParameters: false
@@ -29,7 +28,7 @@ Standard: c++11
 BraceWrapping: 
   AfterCaseLabel: false
   AfterClass: false
-  AfterControlStatement: Always
+  AfterControlStatement: Never
   AfterEnum: false
   AfterFunction: false
   AfterNamespace: false
@@ -52,8 +51,6 @@ BreakConstructorInitializersBeforeComma: false
 BreakInheritanceList: AfterComma
 BracedInitializerIndentWidth: 2
 BreakAfterAttributes: Leave
-# AlwaysBreakAfterReturnType: ExceptShortType
-# BreakAfterReturnType: ExceptShortType
 ColumnLimit: 80
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 IncludeCategories: 
