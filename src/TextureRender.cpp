@@ -109,7 +109,10 @@ cs200::TextureRender::TextureRender():
 
 cs200::TextureRender::~TextureRender() {
   glUseProgram(0);
-  glDeleteProgram(program);
+
+  if (program) {
+    glDeleteProgram(program);
+  }
 }
 
 void cs200::TextureRender::clearFrame(const glm::vec4& c) {
@@ -230,7 +233,6 @@ void cs200::TextureRender::unloadTexture() {
 }
 
 void cs200::TextureRender::unloadMesh() {
-
   mesh_face_count = 0;
 
   if (face_buffer) {
@@ -241,6 +243,11 @@ void cs200::TextureRender::unloadMesh() {
   if (vertex_buffer) {
     glDeleteBuffers(1, &vertex_buffer);
     vertex_buffer = 0;
+  }
+
+  if (texcoord_buffer) {
+    glDeleteBuffers(1, &texcoord_buffer);
+    texcoord_buffer = 0;
   }
 
   if (vao) {
